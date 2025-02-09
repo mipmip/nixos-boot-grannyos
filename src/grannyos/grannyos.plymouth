@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=grannyos
+Description=First GrannyOS Theme
+Comment=created By Pim Snel thanks to @Melkor333
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/grannyos
+ScriptFile=/usr/share/plymouth/themes/grannyos/grannyos.script
