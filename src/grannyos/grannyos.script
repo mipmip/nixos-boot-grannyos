@@ -26,13 +26,13 @@ state.time = 0.0;
 
 // Amount of images - 1 as we start with 0
 image_quantity = 1;
-image_prefix = "grannyos-";
+#image_prefix = "grannyos-";
 
 //--------------------------------- Refresh (Logo animation) --------------------------
 
 # cycle through all images
 for (i = 0; i < image_quantity; i++)
-  images[i] = Image(image_prefix + i + ".png");
+  images[i] = Image(i + ".png");
 animation_sprite = Sprite();
 
 # set image position
@@ -40,8 +40,8 @@ animation_sprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - images[0].GetWidt
 animation_sprite.SetY(Window.GetY() + (Window.GetHeight() / 2 - images[0].GetHeight() / 2));
 
 # Set background color to white
-Window.SetBackgroundTopColor (1, 1, 1);
-Window.SetBackgroundBottomColor (1, 1, 1);
+Window.SetBackgroundTopColor (0, 212, 255);
+Window.SetBackgroundBottomColor (0, 212, 255);
 
 progress = 0;
 
