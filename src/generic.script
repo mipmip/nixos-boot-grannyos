@@ -47,7 +47,7 @@ fun refresh_callback ()
     animation_sprite.SetImage(images[Math.Int(progress / 2) % image_quantity]);
     progress++;
   }
-  
+
 Plymouth.SetRefreshFunction (refresh_callback);
 
 //------------------------------------- Password prompt -------------------------------
